@@ -1,3 +1,4 @@
+<style> .str{ mso-number-format:\@; } </style>
 <h2>CALON MAHASISWA</h2>
 <table border="1">
     <tr><th>NO</th><th>NOMOR PRODI</th><th>NOMOR PENDAFTAR</th><th>NAMA</th><th>NO KK</th><th>NIK</th>
@@ -48,11 +49,11 @@
     foreach ($mahasiswa as $row){
         echo "<tr>
             <td>$no</td>
-            <td>".$row['pemilihan_prodi'].&&.$row['id_pendaftaran_jalur_seleksi']."</td>
+            <td>".$row['pemilihan_prodi']."</td>
             <td>".$row['id_pendaftaran_jalur_seleksi']."</td>
             <td>".$row['nama_calon_mahasiswa']."</td>
             <td>".$row['nomer_kartu_keluarga']."</td>
-            <td>".$row['nomer_induk_kependudukan']."</td>
+            <td class='str'>".$row['nomer_induk_kependudukan']."</td>
             <td>".$row['nomor_induk_siswa_nasional']."</td>
             <td>".$row['tempat_lahir_mahasiswa']."</td>
             <td>".$row['tanggal_lahir_mahasiswa']."</td>
